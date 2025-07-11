@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 13:04:19 by brunogue          #+#    #+#             */
-/*   Updated: 2025/07/03 18:11:00 by brunogue         ###   ########.fr       */
+/*   Updated: 2025/07/09 13:44:15 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 /*
-//cc -w ft_printf.c ft_printf.h ft_printf_utils.c
+//cc -w ft_printf.c ft_printf_utils.c
 #include <stdio.h>
 #include <limits.h>
 int	main(void)
