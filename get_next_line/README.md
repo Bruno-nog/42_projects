@@ -55,6 +55,11 @@ cc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c
 ./a.out
 ```
 
+## Execução
+
+- crie um arquivo do mesmo nome que está na main;
+- coloque algo dentro do arquivo (de preferência separado por linhas);
+- execute o a.out;
 <br>
 
 # English:
@@ -116,3 +121,10 @@ cd get_next_line
 cc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c
 ./a.out
 ```
+
+## Execution
+- create a file with the same name as in main;
+
+- put some content inside the file (preferably separated by lines);
+
+- run the a.out executable;
