@@ -2,7 +2,7 @@
 
 Reimplementação de diversas funções da biblioteca padrão C, como parte do currículo da 42 São Paulo.
 
-![nota libft](../images/libft-125.png) <!-- Aqui você coloca o screenshot da sua nota ou avaliação da libft -->
+![nota libft](../images/libft-125.png)
 
 ## 📌 Objetivo
 
@@ -88,7 +88,7 @@ make
 
 Reimplementation of various functions from the C standard library, as part of the 42 São Paulo curriculum.
 
-![libft grade](../images/libft-125.png) <!-- Here you put the screenshot of your libft grade -->
+![libft grade](../images/libft-125.png)
 
 ## 📌 Objective
 
