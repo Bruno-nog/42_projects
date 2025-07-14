@@ -6,7 +6,7 @@
 /*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 17:35:48 by brunogue          #+#    #+#             */
-/*   Updated: 2024/12/13 17:00:09 by brunogue         ###   ########.fr       */
+/*   Updated: 2025/07/14 19:37:37 by brunogue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,3 +116,25 @@ char	*get_next_line(int fd)
 	ft_lstclear(&lst);
 	return (line);
 }
+
+// int	main(void)
+// {
+// 	int		fd;
+// 	char	*line;
+
+// 	fd = open("arquivo.txt", O_RDONLY);
+// 	if (fd == -1)
+// 	{
+// 		perror("Erro ao abrir o arquivo");
+// 		return (1);
+// 	}
+// 	line = get_next_line(fd);
+// 	while (line)
+// 	{
+// 		printf("%s", line);
+// 		free(line);
+// 		line = get_next_line(fd);
+// 	}
+// 	close(fd);
+// 	return (0);
+// }
