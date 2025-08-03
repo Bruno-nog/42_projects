@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:01:01 by brunogue          #+#    #+#             */
-/*   Updated: 2025/02/20 18:46:33 by brunogue         ###   ########.fr       */
+/*   Updated: 2025/07/30 18:11:58 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
 	char	*sub_str;
 	size_t	s_len;
 
-	i = 0;
 	if (s == NULL)
 		return (NULL);
 	s_len = ft_strlen(s);
