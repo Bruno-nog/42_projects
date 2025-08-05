@@ -83,3 +83,89 @@ Teste com Valgrind para garantir ausência de memory leaks e acessos inválidos.
 
 Se quiser ver logs completos ou testar diferentes cenários, ajuste os parâmetros de entrada e observe o comportamento dos filósofos.
 
+# English:
+
+# philosophers
+
+Simulation of the “Dining Philosophers” problem using threads and mutexes in C, as part of the 42 São Paulo curriculum.
+
+![nota philo](../images/philosophers100.png)
+
+
+## 📌 Objective
+
+Create a program that simulates N philosophers sitting around a circular table, where each philosopher:
+
+- Thinks
+
+- Picks up two forks (mutexes)
+
+- Eats
+
+- Puts down the forks
+
+- Sleeps
+
+The challenge includes avoiding deadlocks, starvation, and ensuring that no philosopher dies of hunger within the defined time.
+
+## Execution Signature:
+```bash
+./philosophers number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_must_eat]
+```
+### Arguments:
+```bash
+number_of_philosophers — number of philosophers and forks (>= 1)
+
+time_to_die — maximum time (ms) without eating before dying
+
+time_to_eat — duration (ms) to eat
+
+time_to_sleep — duration (ms) to sleep
+
+[number_of_times_each_must_eat] (optional) — number of meals each philosopher must eat before ending
+```
+## Rules:
+
+If a philosopher does not eat within time_to_die, they “die” and the program ends displaying the timestamp and the ID.
+
+If number_of_times_each_must_eat is provided and all eat that number of times, the program ends normally.
+
+Actions (picking fork, eating, putting down fork, sleeping, thinking) must be logged with a timestamp in milliseconds since the start of the simulation.
+
+## 🛠️ Compilation
+
+Clone and compile with:
+
+- git clone https://github.com/Bruno-nog/42_projects.git 42_projects
+
+- cd 42_projects/philosophers
+
+- make
+
+This generates the philosophers executable.
+
+## ▶️ Execution
+
+#### Example with 5 philosophers, dying after 800ms without eating, 200ms to eat, 200ms to sleep:
+
+./philo 5 800 200 200
+
+With a limit of 7 meals per philosopher:
+
+./philo 5 800 200 200 7
+
+## 🖼️ Visualizer
+
+Use the Philosophers Visualizer to graphically observe the simulation. Below, an example of how my simulation looked:
+
+![philosophers visualizer](../images/philo_visualizer.png)
+
+## 🧼 Notes
+
+Synchronization is done with mutexes for accessing the forks and the output channel.
+
+The monitor checks the death condition with light polling and ends the simulation immediately.
+
+Test with Valgrind to ensure no memory leaks or invalid accesses.
+
+If you want to see complete logs or test different scenarios, adjust the input parameters and observe the philosophers' behavior.
