@@ -6,7 +6,7 @@ Simulação do problema dos “Dining Philosophers” usando threads e mutexes e
 
 ## 📌 Objetivo
 
-- Criar um programa que simule N filósofos sentados em torno de uma mesa circular, onde cada filósofo:
+Criar um programa que simule N filósofos sentados em torno de uma mesa circular, onde cada filósofo:
 
 - Pensa
 
@@ -20,9 +20,7 @@ Simulação do problema dos “Dining Philosophers” usando threads e mutexes e
 
 O desafio inclui evitar deadlocks, starvation e garantir que nenhum filósofo morra de fome dentro do tempo definido.
 
-## ✅ Especificações
-
-### Assinatura de execução:
+## Assinatura de execução:
 
 ```bash
 ./philosophers number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_must_eat]
@@ -63,15 +61,17 @@ Isso gera o executável philosophers.
 
 #### Exemplo com 5 filósofos, morrem após 800ms sem comer, 200ms para comer, 200ms para dormir:
 
-./philosophers 5 800 200 200
+./philo 5 800 200 200
 
 Com limite de 7 refeições por filósofo:
 
-./philosophers 5 800 200 200 7
+./philo 5 800 200 200 7
 
 ## 🖼️ Visualizador
 
-Use o Philosophers Visualizer para observar a simulação graficamente.Abaixo, um exemplo de como ficou a minha simulação
+Use o Philosophers Visualizer para observar a simulação graficamente.Abaixo, um exemplo de como ficou a minha simulação:
+
+![philosophers visualizer](../images/philo_visualizer.png)
 
 ## 🧼 Observações
 
@@ -82,3 +82,4 @@ O monitor verifica a condição de morte com polling leve e termina a simulaçã
 Teste com Valgrind para garantir ausência de memory leaks e acessos inválidos.
 
 Se quiser ver logs completos ou testar diferentes cenários, ajuste os parâmetros de entrada e observe o comportamento dos filósofos.
+
