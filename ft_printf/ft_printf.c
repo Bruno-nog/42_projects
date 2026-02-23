@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brunogue <brunogue@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 13:04:19 by brunogue          #+#    #+#             */
-/*   Updated: 2025/07/09 13:44:15 by brunogue         ###   ########.fr       */
+/*   Updated: 2025/08/21 17:54:43 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,7 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-/*
+
 //cc -w ft_printf.c ft_printf_utils.c
 #include <stdio.h>
 #include <limits.h>
@@ -235,4 +235,4 @@ int	main(void)
 	printf("ft_printf count = %d\n\n", count);
 	count = printf("%s\n", "");
 	printf("printf count = %d\n", count);
-}*/
+}

@@ -1,6 +1,6 @@
 # 42_projects
 
-Repositório centralizando todos os projetos que desenvolvi até agora na 42 São Paulo. Aqui você encontra implementações completas, com README individual em cada pasta, explicando o funcionamento e como usar.
+<b>IMPORTANTE:</b> Este repositório centraliza alguns dos projetos que desenvolvi na 42 São Paulo. Aqui você encontra implementações completas, com README individual em cada pasta, explicando o funcionamento e como usar. Você não encontrará todos os projetos que fiz na 42 aqui, somente alguns que fiz no início da formação.
 
 Sinta-se à vontade para **clonar**, explorar e **dar uma estrela ⭐**!
 
@@ -62,7 +62,7 @@ Obrigado pela visita e boa exploração! ⭐
 
 # 42_projects
 
-Centralized repository for all the projects I have developed so far at 42 São Paulo. Here you will find complete implementations, with an individual README in each folder explaining functionality and usage.
+<b>IMPORTANT:</b> This repository centralizes some of the projects developed at 42 São Paulo. Here you will find complete implementations, with individual README files in each folder, explaining how they work and how to use them. You will not find all the projects I did at 42 here, only some that I did at the beginning of the training.
 
 Feel free to **clone**, explore, **and star ⭐**!
 
